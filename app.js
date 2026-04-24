@@ -1,5 +1,5 @@
 const pages = [
-  ["index.html", "Home"],
+  ["/html", "Home"],
   ["about.html", "About"],
   ["services.html", "Services"],
   ["projects.html", "Projects"],
