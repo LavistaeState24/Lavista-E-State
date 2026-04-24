@@ -8,7 +8,8 @@
   <link rel="icon" href="assets/logo-32.jpg.jpeg" type="image/jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,73 +17,133 @@
 <body>
   <header id="site-header"></header>
   <main>
-    <section class="page-hero">
-      <div class="lux-container flex min-h-screen items-center pt-24">
+    <section class="page-hero contact-hero">
+      <div class="lux-container flex min-h-screen items-center pt-28 pb-14 sm:min-h-[85svh] lg:min-h-screen">
         <div class="max-w-2xl">
           <span class="eyebrow reveal">Contact</span>
-          <h1 class="reveal mt-7 font-display text-3xl font-bold leading-[1.3] text-white sm:text-2xl lg:text-5xl">Start a focused project growth discussion.</h1>
-          <p class="reveal mt-6 max-w-2xl text-lg leading-8 text-white/70">Share your project details, inventory stage, market, and sales target. Lavista Estate will help map the next buyer acquisition path.</p>
-          <div class="reveal mt-9 flex flex-col gap-4 sm:flex-row">
-            <a href="tel:+917041023501" class="btn-primary">Call Lavista Estate</a>
-            <a href="services.html" class="btn-secondary">Explore Services</a>
+          <h1 class="reveal mt-5 font-display text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Start
+            a focused project growth discussion.</h1>
+          <p class="reveal mt-5 max-w-2xl text-base leading-7 text-white/70 sm:text-lg sm:leading-8">Share your project
+            details, inventory stage, market, and sales target. Lavista Estate will help map the next buyer acquisition
+            path.</p>
+          <div class="reveal mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4">
+            <a href="tel:+917041023501" class="btn-primary w-full text-center sm:w-auto">Call Lavista Estate</a>
+            <a href="services.html" class="btn-secondary w-full text-center sm:w-auto">Explore Services</a>
           </div>
         </div>
       </div>
     </section>
 
     <section class="section-pad section-reveal">
-      <div class="lux-container contact-shell">
-        <div class="contact-form-shell reveal-local">
-          <span class="eyebrow">Project enquiry</span>
-          <h2 class="mt-5 font-display text-4xl leading-tight">Tell us what you want to grow.</h2>
-          <form class="mt-8 grid gap-4" data-contact-form>
-            <div class="grid gap-4 md:grid-cols-2">
-              <input class="rounded-2xl border border-white/15 bg-white/[0.04] px-5 py-3.5 outline-none placeholder:text-white/55 focus:border-[#f3d79b]/65 focus:bg-white/[0.09]" name="name" placeholder="Full name" minlength="3" maxlength="60" pattern="[A-Za-z\s]{3,60}" required>
-              <input class="rounded-2xl border border-white/15 bg-white/[0.04] px-5 py-3.5 outline-none placeholder:text-white/55 focus:border-[#f3d79b]/65 focus:bg-white/[0.09]" name="company" placeholder="Company / Project name" minlength="2" maxlength="80">
-            </div>
-            <div class="grid gap-4 md:grid-cols-2">
-              <input class="rounded-2xl border border-white/15 bg-white/[0.04] px-5 py-3.5 outline-none placeholder:text-white/55 focus:border-[#f3d79b]/65 focus:bg-white/[0.09]" name="phone" placeholder="Phone number" inputmode="tel" minlength="10" maxlength="18" pattern="[0-9+\-\s]{10,18}" required>
-              <input class="rounded-2xl border border-white/15 bg-white/[0.04] px-5 py-3.5 outline-none placeholder:text-white/55 focus:border-[#f3d79b]/65 focus:bg-white/[0.09]" name="email" placeholder="Email address" type="email" minlength="6" maxlength="100" required>
-            </div>
-            <div class="grid gap-4 md:grid-cols-2">
-              <select class="rounded-2xl border border-white/15 bg-white/[0.04] px-5 py-3.5 outline-none invalid:text-white/55 focus:border-[#f3d79b]/65 [&_option]:bg-[#282b2f] [&_option]:text-white" name="service" required>
-                <option value="">Service interest</option>
-                <option>Google and Meta Ads</option>
-                <option>Lead Filtering and Nurturing</option>
-                <option>Site Visit Generation</option>
-                <option>Sole Selling Support</option>
-              </select>
-              <select class="rounded-2xl border border-white/15 bg-white/[0.04] px-5 py-3.5 outline-none invalid:text-white/55 focus:border-[#f3d79b]/65 [&_option]:bg-[#282b2f] [&_option]:text-white" name="category" required>
-                <option value="">Property category</option>
-                <option>Residential</option>
-                <option>Commercial</option>
-                <option>Plotted Development</option>
-                <option>Luxury</option>
-                <option>Sole Selling</option>
-              </select>
-            </div>
-            <textarea class="min-h-36 rounded-2xl border border-white/15 bg-white/[0.04] px-5 py-3.5 outline-none placeholder:text-white/55 focus:border-[#f3d79b]/65 focus:bg-white/[0.09]" name="message" placeholder="Project details, inventory stage, sales goal, and location" minlength="10" maxlength="500" required></textarea>
-            <button class="btn-primary border-0" type="submit">Send Enquiry on WhatsApp</button>
-            <div class="hidden" data-form-status></div>
-          </form>
-        </div>
-
-        <div class="grid gap-5">
+      <div class="lux-container grid gap-8">
+        <div class="grid gap-5 sm:grid-cols-3">
           <article class="contact-card reveal-local">
             <div class="contact-icon"><i class="fi fi-rr-phone-call text-2xl"></i></div>
             <h3 class="mt-5 text-xl font-bold">Phone</h3>
-            <a href="tel:+917041023501" class="mt-2 block text-white/62 hover:text-[#f3d79b]">+91 70410 23501</a>
+            <a href="tel:+917041023501" class="mt-2 block break-words text-white/62 transition hover:text-[#f3d79b]">+91
+              70410 23501</a>
           </article>
+
           <article class="contact-card reveal-local">
             <div class="contact-icon"><i class="fi fi-rr-envelope text-2xl"></i></div>
             <h3 class="mt-5 text-xl font-bold">Email</h3>
-            <a href="mailto:lavistaestates24@gmail.com" class="mt-2 block text-white/62 hover:text-[#f3d79b]">lavistaestates24@gmail.com</a>
+            <a href="mailto:lavistaestates24@gmail.com"
+              class="mt-2 block break-words text-white/62 transition hover:text-[#f3d79b]">lavistaestates24@gmail.com</a>
           </article>
+
           <article class="contact-card reveal-local">
             <div class="contact-icon"><i class="fi fi-rr-marker text-2xl"></i></div>
             <h3 class="mt-5 text-xl font-bold">Location</h3>
-            <a href="https://maps.app.goo.gl/QcR9nV2bSjLvNhFZ9" target="_blank" rel="noopener" class="mt-2 block text-white/62 hover:text-[#f3d79b]">Ahmedabad, Gujarat</a>
+            <a href="https://maps.app.goo.gl/QcR9nV2bSjLvNhFZ9" target="_blank" rel="noopener"
+              class="mt-2 block break-words text-white/62 transition hover:text-[#f3d79b]">Ahmedabad, Gujarat</a>
           </article>
+        </div>
+
+        <div class="contact-shell items-start">
+
+          <div class="contact-form-shell reveal-local w-full">
+            <span class="eyebrow">Project enquiry</span>
+            <h2 class="mt-5 font-display text-3xl leading-tight sm:text-4xl">Tell us what you want to grow.</h2>
+            <p class="mt-4 leading-7 text-white/62">Share your project type, service need, and sales objective. We will
+              turn that into a focused growth conversation.</p>
+
+            <form class="mt-8 grid gap-4" data-contact-form>
+              <div class="grid gap-4 sm:grid-cols-2">
+                <input
+                  class="w-full rounded-2xl border border-white/15 bg-white/[0.04] px-5 py-3.5 text-white outline-none placeholder:text-white/55 focus:border-[#f3d79b]/65 focus:bg-white/[0.09]"
+                  name="name" placeholder="Full name" minlength="3" maxlength="60" pattern="[A-Za-z\s]{3,60}" required>
+
+                <input
+                  class="w-full rounded-2xl border border-white/15 bg-white/[0.04] px-5 py-3.5 text-white outline-none placeholder:text-white/55 focus:border-[#f3d79b]/65 focus:bg-white/[0.09]"
+                  name="company" placeholder="Company / Project name" minlength="2" maxlength="80">
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <input
+                  class="w-full rounded-2xl border border-white/15 bg-white/[0.04] px-5 py-3.5 text-white outline-none placeholder:text-white/55 focus:border-[#f3d79b]/65 focus:bg-white/[0.09]"
+                  name="phone" placeholder="Phone number" inputmode="tel" minlength="10" maxlength="18"
+                  pattern="[0-9+\-\s]{10,18}" required>
+
+                <input
+                  class="w-full rounded-2xl border border-white/15 bg-white/[0.04] px-5 py-3.5 text-white outline-none placeholder:text-white/55 focus:border-[#f3d79b]/65 focus:bg-white/[0.09]"
+                  name="email" placeholder="Email address" type="email" minlength="6" maxlength="100" required>
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div class="relative">
+                  <select
+                    class="w-full appearance-none rounded-2xl border border-white/15 bg-white/[0.04] px-5 py-3.5 pr-12 text-white outline-none invalid:text-white/55 focus:border-[#f3d79b]/65 focus:bg-white/[0.09] [&_option]:bg-[#181b21] [&_option]:text-white"
+                    name="service" required>
+                    <option value="">Service interest</option>
+                    <option>Google and Meta Ads</option>
+                    <option>Lead Filtering and Nurturing</option>
+                    <option>Site Visit Generation</option>
+                    <option>Sole Selling Support</option>
+                  </select>
+                  <span class="pointer-events-none absolute inset-y-0 right-4 flex items-center text-white/55">
+                    <i class="fi fi-rr-angle-small-down text-lg"></i>
+                  </span>
+                </div>
+
+                <div class="relative">
+                  <select
+                    class="w-full appearance-none rounded-2xl border border-white/15 bg-white/[0.04] px-5 py-3.5 pr-12 text-white outline-none invalid:text-white/55 focus:border-[#f3d79b]/65 focus:bg-white/[0.09] [&_option]:bg-[#181b21] [&_option]:text-white"
+                    name="category" required>
+                    <option value="">Property category</option>
+                    <option>Residential</option>
+                    <option>Commercial</option>
+                    <option>Plotted Development</option>
+                    <option>Luxury</option>
+                    <option>Sole Selling</option>
+                  </select>
+                  <span class="pointer-events-none absolute inset-y-0 right-4 flex items-center text-white/55">
+                    <i class="fi fi-rr-angle-small-down text-lg"></i>
+                  </span>
+                </div>
+              </div>
+
+              <textarea
+                class="min-h-36 w-full rounded-2xl border border-white/15 bg-white/[0.04] px-5 py-3.5 text-white outline-none placeholder:text-white/55 focus:border-[#f3d79b]/65 focus:bg-white/[0.09]"
+                name="message" placeholder="Project details, inventory stage, sales goal, and location" minlength="10"
+                maxlength="500" required></textarea>
+
+              <button class="btn-primary w-full border-0 text-center">Send Enquiry on WhatsApp</button>
+              <div class="hidden" data-form-status></div>
+            </form>
+          </div>
+
+          <div class="h-full w-full">
+            <div class="h-full w-full overflow-hidden rounded-3xl border border-white/10">
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.207917169141!2d72.529958208926!3d23.052837779065534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e854617dfca4f%3A0xce51bdb7550ced8e!2sLavista%20Estate%20and%20Imperial!5e0!3m2!1sen!2sin!4v1777010455036!5m2!1sen!2sin"
+                class="h-full w-full border-0" loading="lazy">
+              </iframe>
+
+            </div>
+          </div>
+
+
         </div>
       </div>
     </section>
