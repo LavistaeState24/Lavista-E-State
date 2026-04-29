@@ -1,4 +1,34 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "routes": [
+    {
+      "src": "^/$",
+      "dest": "/index.html"
+    },
+    {
+      "src": "^/about/?$",
+      "dest": "/about.html"
+    },
+    {
+      "src": "^/services/?$",
+      "dest": "/services.html"
+    },
+    {
+      "src": "^/projects/?$",
+      "dest": "/projects.html"
+    },
+    {
+      "src": "^/contact/?$",
+      "dest": "/contact.html"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "^(.*)$",
+      "status": 404,
+      "dest": "/404.html"
+    }
+  ]
 }

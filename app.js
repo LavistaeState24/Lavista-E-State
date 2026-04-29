@@ -1,12 +1,23 @@
 const pages = [
-  ["/html", "Home"],
+  ["index.html", "Home"],
   ["about.html", "About"],
   ["services.html", "Services"],
   ["projects.html", "Projects"],
   ["contact.html", "Contact"]
 ];
 
-const currentPage = location.pathname.split("/").pop() || "index.html";
+function normalizePath(pathname) {
+  if (!pathname || pathname === "/index" || pathname === "/index.html") {
+    return "/";
+  }
+
+  return pathname
+    .replace(/\/index(?:\.html)?$/, "/")
+    .replace(/\.html$/, "")
+    .replace(/\/+$/, "") || "/";
+}
+
+const currentPage = normalizePath(location.pathname);
 const whatsappNumber = "917041023501";
 
 function icon(name) {
@@ -32,7 +43,7 @@ function initShell() {
 
   if (header) {
     const nav = pages.map(([href, label]) => {
-      const active = href === currentPage || (currentPage === "" && href === "index.html");
+      const active = normalizePath(href) === currentPage;
       return `<a class="nav-link ${active ? "active" : ""}" href="${href}">${label}</a>`;
     }).join("");
 
